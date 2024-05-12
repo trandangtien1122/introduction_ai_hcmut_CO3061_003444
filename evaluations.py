@@ -162,7 +162,7 @@ def evaluate_good_bad(board: list, player_to_move: int):
     return 2 * score + 2 * player_to_move * len(legal_moves)
 
 
-def evaluate_corner(board: list):
+def evaluate_corner(board: list, player_to_move=0):
     score = 0
     total_tile = 0
     num_tile = 0
